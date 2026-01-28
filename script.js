@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const voiceProgressBar = document.getElementById("voiceProgressBar");
     const voiceTime = document.getElementById("voiceTime");
 
-    const bgMusic = document.getElementById("bgMusic");
+    const bgMusic = document.getElementById("oh");
     const musicBtn = document.getElementById("musicBtn");
 
     const countdownEl = document.getElementById("countdown");
