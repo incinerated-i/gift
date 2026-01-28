@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ABRAWRRRRRRRRRRRRRRR🎂</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<h1>Rawr Rawr, the very idiotic man 🎂</h1>
+
+<p>
+I made this just for you (´｡• ᵕ •｡`) <br>
+<strong>28th January 2026</strong>
+</p>
+
+<div id="countdown">⏳ Loading countdown...</div>
+
+<button id="musicBtn">🎵 Play Music</button>
+<audio id="bgMusic" loop>
+    <source src="assets/music/bgmusic.mp3" type="audio/mp3">
+</audio>
+
+<!-- 🎂 CAKE SECTION -->
+<section id="cakeSection">
+    <img id="cakeGif"
+         src="https://i.pinimg.com/originals/c2/ec/cf/c2eccf4f82fd5e31e1c7d8ee3c9e8e7d.gif"
+         alt="Birthday Cake">
+    <p class="hint">
+        Tap the cake🎂.
+        WARNING: the contained content inside can only be opened ONCE
+    </p>
+</section>
+
+<div class="scrollSpacer"></div>
+
+<!-- 📸 MEMORIES -->
+<section id="memoriesSection">
+    <h2>ABROR📸</h2>
+    <div id="slideshow">
+        <img id="slide" src="assets/images/photo1.png" alt="Memories">
+    </div>
+</section>
+
+<div class="scrollSpacer big"></div>
+
+<!-- MAP -->
+<section id="mapSection">
+    <h2>Etheral places</h2>
+
+    <div id="mapButtons">
+        <button onclick="changeMap(0)">Place 1</button>
+        <button onclick="changeMap(1)">Place 2</button>
+        <button onclick="changeMap(2)">Place 3</button>
+        <button onclick="changeMap(3)">Place 4</button>
+        <button onclick="changeMap(4)">Place 5</button>
+        <button onclick="changeMap(5)">Place 6</button>
+        <button onclick="changeMap(6)">Place 7</button>
+        <button onclick="changeMap(7)">Place 8</button>
+    </div>
+
+    <iframe
+        id="mapFrame"
+        src="https://www.google.com/maps/embed?pb=!4v1767774687928!6m8!1m7!1sqjIOYIB_OujEayuPBsUXzw!2m2!1d54.10768613335556!2d159.9851103911956!3f93.44184358199071!4f36.55819411358391!5f1.1065099421335651"
+        width="100%"
+        height="450"
+        style="border:0; border-radius:16px;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <p class="mapHint">Isn't it pretty?</p>
+</section>
+
+<!-- 💌 Appreciation Section -->
+<section id="appreciationSection">
+    <h2>Yk why I show you these mf places?</h2>
+
+    <div class="appreciationBox">
+        <p>
+            It's because you are as pretty as the colour that these places bring to de world.
+            Well, how to put it, I find those pretty, and I think you are too, as a human. You stayed with me 
+          TO THIS DAY. TO THISSS DAY.
+        </p>
+        <p>
+            Being the clearly-better friend in this friendship, I have decided to bless upon you this very blessing
+          of a gift,
+        </p>
+        <p>
+            But it hasn't been very successful. WELL- But, I shouldn't dwell on it.
+            It is..or was, your birthday, so I should make this VERYYYY unique.
+        </p>
+    </div>
+</section>
+
+<!-- FUN GAME -->
+<section id="memoryGame">
+    <h2>🧠 How Well Do You Know ~(>_<~ ?</h2>
+    <p id="memoryQuestion"></p>
+
+    <div class="choices">
+        <button onclick="answerMemory(0)">Yurii</button>
+        <button onclick="answerMemory(1)">Ran</button>
+    </div>
+
+    <p id="memoryFeedback"></p>
+</section>
+
+<div class="scrollSpacer big"></div>
+
+<!-- STORY -->
+<section id="storyGame">
+    <h2>Do you like the present so farr??</h2>
+    <p id="storyText">
+        DO YOU LIKE. IT.?!
+    </p>
+
+    <div class="choices">
+        <button onclick="storyChoice('yeah')">Yeah</button>
+        <button onclick="storyChoice('no')">Nah</button>
+    </div>
+</section>
+
+<footer id="bottomLink">
+    <p>
+        <a href="#" id="finalGifLink">
+            <img src="https://i.pinimg.com/originals/6a/d0/7b/6ad07bc7872b7f4cafc7f14ad7638306.gif"
+                 alt="Surprise GIF"
+                 style="width: 300px; max-width: 90%; border-radius: 12px;">
+        </a>
+    </p>
+</footer>
+
+
+<!-- 💖 POPUP -->
+<div id="popupWindow">
+    <div id="popupContent">
+        <h2>凸 My blessings for you 凸</h2>
+
+        <audio id="voiceNote" preload="auto">
+            <source src="assets/voice/ha.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="popup-buttons">
+            <button id="playButton">Play 💖</button>
+            <button id="surpriseBtn" disabled>Surprise 💌</button>
+            <button id="closeBtn">Close</button>
+        </div>
+
+        <div id="voiceProgressWrapper">
+            <div id="voiceProgressBar"></div>
+        </div>
+
+        <p id="voiceTime">0:00 / 0:00</p>
+
+        <p id="typewriter"></p>
+
+        <p id="lockedMessage">
+           Even if it's virtual,
+              I hope it remains as a piece of memory that you can reminisce about.
+        </p>
+    </div>
+</div>
+
+<script src="assets/effects/confetti.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
