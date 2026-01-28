@@ -180,10 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "assets/images/photoc.png",
         "assets/images/photod.png",
         "assets/images/photoe.png",
-        "assets/images/photof.png",
-        "assets/images/photog.png",
-        "assets/images/photoh.png",
-        "assets/images/photoi.png",
     ];
 
     let slideIndex = 0;
