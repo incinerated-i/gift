@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const voiceProgressBar = document.getElementById("voiceProgressBar");
     const voiceTime = document.getElementById("voiceTime");
 
-    const bgMusic = document.getElementById("oh");
+    const bgMusic = document.getElementById("bgMusic");
     const musicBtn = document.getElementById("musicBtn");
 
     const countdownEl = document.getElementById("countdown");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- COUNTDOWN ---
-    const birthday = new Date("January 29, 2026 00:05:00").getTime();
+    const birthday = new Date("January 29, 2026 00:10:00").getTime();
     const countdownTimer = setInterval(() => {
         const diff = birthday - Date.now();
         if (diff <= 0) {
